@@ -1,0 +1,15 @@
+# Cloudflare Pages 重定向规则
+# 文档: https://developers.cloudflare.com/pages/platform/redirects/
+
+# 短链接重定向
+/下载        /download.html    200
+/download    /download.html    200
+/dl          /dl.html          200
+/get         /dl.html          200
+
+# 备用重定向（如果以后需要更短的链接）
+/d           /dl.html          200
+/go          /dl.html          200
+
+# 根路径重定向到主页
+/            /index.html       200

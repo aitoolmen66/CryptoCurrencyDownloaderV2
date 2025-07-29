@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoCurrencyDownloaderV2 - 最新版本下载</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin: 50px auto;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .version-info {
+            background: #e8f4fd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .download-btn {
+            background: #27ae60;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 20px 0;
+            transition: background 0.3s;
+        }
+        
+        .download-btn:hover {
+            background: #229954;
+        }
+        
+        .redirect-info {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            color: #856404;
+        }
+        
+        .countdown {
+            font-size: 24px;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .manual-link {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 CryptoCurrencyDownloaderV2</h1>
+        <h2>最新版本下载</h2>
+        
+        <div class="version-info">
+            <p><strong>当前版本：</strong><span id="currentVersion">V2.0</span></p>
+            <p><strong>更新时间：</strong><span id="updateTime">2024-01-29</span></p>
+        </div>
+        
+        <div class="redirect-info">
+            <p>⏰ 页面将在 <span class="countdown" id="countdown">3</span> 秒后自动跳转到下载页面</p>
+            <p>如未自动跳转，请点击下方按钮手动下载</p>
+        </div>
+        
+        <a href="#" class="download-btn" id="downloadBtn">
+            📥 立即下载最新版本
+        </a>
+        
+        <div class="manual-link">
+            <p><strong>下载链接：</strong></p>
+            <p id="downloadLink">正在获取下载链接...</p>
+        </div>
+        
+        <hr style="margin: 30px 0;">
+        <p><a href="index.html">📖 查看完整使用教程</a></p>
+    </div>
+
+    <script>
+        // ================================
+        // 📍 更新下载链接请修改这里 📍
+        // ================================
+        const DOWNLOAD_CONFIG = {
+            url: "https://wwwz.lanzout.com/i8QV5322uq8h",  // 👈 只需要修改这个链接
+            version: "V2.0",                                // 👈 版本号
+            updateTime: "2025-01-29"                       // 👈 更新时间
+        };
+        // ================================
+        
+        // 设置下载信息
+        document.getElementById('currentVersion').textContent = DOWNLOAD_CONFIG.version;
+        document.getElementById('updateTime').textContent = DOWNLOAD_CONFIG.updateTime;
+        document.getElementById('downloadLink').textContent = DOWNLOAD_CONFIG.url;
+        document.getElementById('downloadBtn').href = DOWNLOAD_CONFIG.url;
+        
+        // 倒计时重定向
+        let countdown = 3;
+        const countdownElement = document.getElementById('countdown');
+        
+        const timer = setInterval(() => {
+            countdown--;
+            countdownElement.textContent = countdown;
+            
+            if (countdown <= 0) {
+                clearInterval(timer);
+                // 跳转到下载页面
+                window.location.href = DOWNLOAD_CONFIG.url;
+            }
+        }, 1000);
+        
+        // 点击按钮立即下载
+        document.getElementById('downloadBtn').addEventListener('click', function(e) {
+            clearInterval(timer);
+            // 让浏览器处理下载链接
+        });
+        
+        // 添加页面标题中的版本信息
+        document.title = `CryptoCurrencyDownloaderV2 ${DOWNLOAD_CONFIG.version} - 最新版本下载`;
+    </script>
+</body>
+</html>
