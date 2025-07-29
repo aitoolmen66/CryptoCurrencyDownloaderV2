@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoCurrencyDownloaderV2使用教程</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 4px solid #3498db;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            color: #856404;
+        }
+        
+        .warning strong {
+            color: #d63031;
+        }
+        
+        .download-link {
+            background: #e8f5e8;
+            border: 1px solid #27ae60;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .download-link a {
+            color: #27ae60;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .download-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .config-section {
+            background: #f8f9fa;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        
+        .config-item {
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 3px solid #3498db;
+            background: white;
+        }
+        
+        .config-item strong {
+            color: #2980b9;
+        }
+        
+        .image-placeholder {
+            background: #ecf0f1;
+            border: 2px dashed #bdc3c7;
+            border-radius: 5px;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            color: #7f8c8d;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+        }
+        
+        .code-block {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        
+        .contact-section {
+            background: #e8f4fd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .faq-item {
+            background: #fff5f5;
+            border-left: 4px solid #e74c3c;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .faq-item h4 {
+            color: #c0392b;
+            margin: 0 0 10px 0;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .step-number {
+            background: #3498db;
+            color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CryptoCurrencyDownloaderV2使用教程</h1>
+        
+        <div class="warning">
+            <strong>重要提醒：</strong>使用前请确保已经开启全局代理，并且选择正确的代理节点！！！
+            <br>详细设置请参考 → <a href="#proxy-section">第5节 网络代理</a>
+        </div>
+        
+        <div class="download-link">
+            <p><strong>最新版本下载地址：</strong></p>
+            <a href="https://wwwz.lanzout.com/i8QV5322uq8h" target="_blank">点击下载 CryptoCurrencyDownloaderV2</a>
+        </div>
+        
+        <h2><span class="step-number">1</span>启动软件</h2>
+        <p>双击启动下载器，填入授权码，然后点击"验证许可证"</p>
+        <div class="image-container">
+            <img src="images/startup-screen.png" alt="软件启动界面和授权码输入界面" style="max-width: 70%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        </div>
+        
+        <h2><span class="step-number">2</span>进入软件主界面</h2>
+        <div class="image-container">
+            <img src="images/main-interface.png" alt="软件主界面截图" style="max-width: 90%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        </div>
+        
+        <h2><span class="step-number">3</span>下载配置</h2>
+        <div class="config-section">
+            <div class="config-item">
+                <strong>● 交易对</strong>
+                <p>以BTC为例，输入<code>BTC/USDT</code>即可。如下载其他币的数据，请直接输入对应交易对。</p>
+            </div>
+            
+            <div class="config-item">
+                <strong>● 数据类型</strong>
+                <ul>
+                    <li><strong>K线数据：</strong>包括现货与期货的开高低收成交量数据</li>
+                    <li><strong>标记价格：</strong>关联市场类型为"期货"，K线周期为自动，下载固定时间频率的标记价格数据</li>
+                    <li><strong>资金费率：</strong>同标记价格设置</li>
+                </ul>
+            </div>
+            
+            <div class="config-item">
+                <strong>● 交易所</strong>
+                <p>目前支持币安（binance）、欧易（okx）数据下载</p>
+            </div>
+            
+            <div class="config-item">
+                <strong>● 市场类型</strong>
+                <p>现货、期货</p>
+            </div>
+            
+            <div class="config-item">
+                <strong>● K线周期</strong>
+                <p>根据需要选择相应的时间周期</p>
+            </div>
+            
+            <div class="config-item">
+                <strong>● 时区</strong>
+                <p>当选择标记价格数据或资金费率数据时，此处会设置为默认值</p>
+            </div>
+            
+            <div class="config-item">
+                <strong>● 开始日期 / 结束日期</strong>
+                <p>设置需要下载的数据时间范围</p>
+            </div>
+            
+            <div class="config-item">
+                <strong>● 输出路径</strong>
+                <p>选择数据保存的本地路径</p>
+            </div>
+        </div>
+        
+        <h2><span class="step-number">4</span>开始与结束时间</h2>
+        <div class="warning">
+            <p>下载数据的开始与结束时间取决于所选的交易所与交易对，开始时间与官方数据的开始时间基本一致。</p>
+            <p><strong>示例：</strong>币安中BTC的永续合约开始时间是2020-01-01，如果使用比这个时间早的时间点作为开始时间就会导致报错下载失败！</p>
+        </div>
+        
+        <h2 id="proxy-section"><span class="step-number">5</span>网络代理</h2>
+        
+        <h3>测试网络连接</h3>
+        <p><strong>币安（Binance）测试：</strong></p>
+        <div class="code-block">
+            https://api.binance.com/api/v3/exchangeInfo
+        </div>
+        
+        <p><strong>欧易（OKX）测试：</strong></p>
+        <div class="code-block">
+            https://www.okx.com/api/v5/public/instruments?instType=SPOT
+        </div>
+        
+        <p>用浏览器打开以上网址，如果不能看到数据，说明你处在被墙的状态，需要先解决科学上网问题。</p>
+        
+        <h3>Clash代理设置</h3>
+        <p>如果你Windows使用的是Clash进行科学上网，代理设置为"全局"，启动"系统代理"。</p>
+        <div class="image-container">
+            <img src="images/clash-settings.png" alt="Clash代理设置界面截图" style="max-width: 70%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        </div>
+        
+        <div class="download-link">
+            <p><strong>推荐代理服务：</strong></p>
+            <p>这里推荐正在使用的代理 [飞数] 比较稳定：</p>
+            <a href="https://a.flyintpro02.com/#/register?code=qxGISF1K" target="_blank">飞数代理注册链接</a>
+        </div>
+        
+        <div class="image-container">
+            <img src="images/proxy-success.png" alt="代理成功连接效果图" style="max-width: 70%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        </div>
+        
+        <h2><span class="step-number">6</span>联系方式</h2>
+        <div class="contact-section">
+            <p>📧 如有问题，请联系技术支持</p>
+            <div class="image-container">
+                <img src="images/contact-info.png" alt="联系方式信息" style="max-width: 30%; height: auto; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+        
+        <h2><span class="step-number">7</span>常见问题</h2>
+        <div class="faq-item">
+            <h4>Q: Markets were not loaded. 报错怎么办？</h4>
+            <p><strong>A:</strong> 行情数据无法加载，因为当前交易所禁止了当前IP所在国家的操作请求，需要将代理的IP切换到合规的国家地区。</p>
+        </div>
+        
+        <div class="faq-item">
+            <h4>Q: 下载失败或数据不完整怎么办？</h4>
+            <p><strong>A:</strong> 请检查：</p>
+            <ul>
+                <li>网络代理是否正常工作</li>
+                <li>开始时间是否早于交易所该交易对的上线时间</li>
+                <li>授权码是否有效</li>
+            </ul>
+        </div>
+        
+        <div style="margin-top: 40px; text-align: center; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 20px;">
+            <p>© 2025 CryptoCurrencyDownloaderV2 使用教程</p>
+        </div>
+    </div>
+</body>
+</html>
